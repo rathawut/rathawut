@@ -9,7 +9,7 @@ export default async function BlogPosts(): Promise<JSX.Element> {
       <h1 className="text-3xl font-bold mb-6">Latest Blog Posts</h1>
       <div className="grid gap-6">
         {rows.map((row) => (
-          <div key={row.id} className="bg-white rounded-lg shadow-md flex">
+          <div key={row.id} className="py-2 bg-white rounded-lg shadow-md flex">
             <div className="h-40 w-40 relative rounded-l-lg overflow-hidden">
               <Image
                 src="/logo.png"
@@ -18,8 +18,11 @@ export default async function BlogPosts(): Promise<JSX.Element> {
                 height={160}
               />
             </div>
-            <div className="p-4">
+            <div className="p-2">
               <h2 className="text-lg font-semibold text-gray-800">{row.title}</h2>
+              <p className="text-gray-500 text-sm">
+                By: Rathawut Lertsuksakda
+              </p>
               <p className="text-gray-500 text-sm mb-2">
                 Published on: {new Date(row.created_at).toLocaleString()}
               </p>
