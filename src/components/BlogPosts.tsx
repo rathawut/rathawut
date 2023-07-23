@@ -9,8 +9,8 @@ export default async function BlogPosts(): Promise<JSX.Element> {
       <h1 className="text-3xl font-bold mb-6">Latest Blog Posts</h1>
       <div className="grid gap-6">
         {rows.map((row) => (
-          <div key={row.id} className="py-2 bg-white rounded-lg shadow-md flex">
-            <div className="h-40 w-40 relative rounded-l-lg overflow-hidden">
+          <div key={row.id} className="bg-white rounded-lg shadow-md flex">
+            <div className="h-40 w-40 relative rounded-l-lg overflow-hidden bg-gray-50 my-4 ml-4">
               <Image
                 src="/logo.png"
                 alt={row.title}
@@ -18,7 +18,7 @@ export default async function BlogPosts(): Promise<JSX.Element> {
                 height={160}
               />
             </div>
-            <div className="p-2">
+            <div className="m-4">
               <h2 className="text-lg font-semibold text-gray-800">{row.title}</h2>
               <p className="text-gray-500 text-sm">
                 By: Rathawut Lertsuksakda
