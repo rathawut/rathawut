@@ -28,6 +28,10 @@ body {
   flex: 1;
 }
 
+.min-h-dynamic-screen {
+  min-height: 100dvh;
+}
+
 footer {
   flex-shrink: 0;
 }

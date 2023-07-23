@@ -20,7 +20,7 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex flex-col min-h-screen bg-gray-100">
+        <div className="flex flex-col min-h-dynamic-screen bg-gray-100">
           <Header />
           <main className="container mx-auto flex-grow py-8 px-4">
             {children}
