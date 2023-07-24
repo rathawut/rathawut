@@ -6,7 +6,7 @@ const ProfileCard: React.FC = () => {
     <div className="flex items-center">
       <div className="mr-4">
         <Image
-          src="/profile.jpg"
+          src="/profile_160x160.jpg"
           alt="Profile"
           width={160}
           height={160}

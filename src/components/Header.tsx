@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import Navigation from '@/components/Navigation';
 
 const Header: React.FC = () => {
   return (
@@ -11,7 +10,6 @@ const Header: React.FC = () => {
             <Image src="/logo.png" alt="Rathawut.com" width={48} height={48} />
           </Link>
         </div>
-        <Navigation />
       </div>
     </header>
   );
